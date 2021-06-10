@@ -13,12 +13,15 @@ public class Main {
         //В задании не сказано необходимо ли сохранить данные в отдельный лист, или изменить имеющийся
         // делаю отдельный
         List<Integer> result = new ArrayList<>();
+
         for (int integer : integerList) {
             if (integer > 0 && (integer % 2 == 0)) {
                 result.add(integer);
             }
         }
+
         quickSort(result, 0, result.size() - 1);
+
         for (int integer : result) {
             System.out.println(integer);
         }
